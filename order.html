@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <header>
-    <a href="index.html">Главная</a>
-    <a href="index.html#compare">Сравнение с 13PRO</a>
-    <a href="reviews.html">Отзывы</a>
-    <a href="order.html">Заказать</a>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="index.html#compare">Сравнение с 13PRO</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="order.html">Заказать</a>
+    </nav>
 </header>
+
 
 <h1>Заказать Iphone 13 Pro Max</h1>
 
@@ -32,19 +35,19 @@
     <div>
         <label>
             Телефон
-        <select required>
-            <option value="+375">+375</option>
-            <option value="+7" selected>+7</option>
-            <option value="+380">+380</option>
-        </select>
-        <input type="text" required>
+            <select required>
+                <option value="+375">+375</option>
+                <option value="+7" selected>+7</option>
+                <option value="+380">+380</option>
+            </select>
+            <input type="text" required>
         </label>
     </div>
     <br>
     <div>
         <label>
             Email
-            <input type="email" name="email"  required>
+            <input type="email" name="email" required>
         </label>
     </div>
     <br>
@@ -60,31 +63,35 @@
     </div>
     <br>
     <div>
-       Способ доставки
-        <br>
         <label>
-            <input type="radio" name="deliver" value="1" checked required>Курьером
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="delivery" value="2" required>Самовывоз
+            Способ доставки
+            <br>
+            <label>
+                <input type="radio" name="delivery" value="1" checked required>Курьером
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="delivery" value="2" required>Самовывоз
+            </label>
         </label>
     </div>
     <br>
 
     <div>
-        Добавить к заказу
-        <br>
         <label>
-            <input type="checkbox" name="add-to-order" value="case">Прозрачный чехол
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" name="add-to-order" value="charger">Беспроводное зарядное устройство MagSafe
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" name="add-to-order" value="headphones">Наушники AirPods
+            Добавить к заказу
+            <br>
+            <label>
+                <input type="checkbox" name="add-to-order[]" value="case">Прозрачный чехол
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="add-to-order[]" value="charger">Беспроводное зарядное устройство MagSafe
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="add-to-order[]" value="headphones">Наушники AirPods
+            </label>
         </label>
     </div>
     <br>
@@ -97,8 +104,10 @@
     </div>
     <br>
     <div>
+        <label>
         <input type="checkbox" name="agreed" value="1"> Принимаю
         <a href="#">условия сайта</a>
+        </label>
     </div>
     <br>
     <button type="submit">Заказать</button>
